@@ -17,12 +17,8 @@ return {
           "cssls",
           "tailwindcss",
           "bashls",
-          "dockerls",
-          "docker_compose_language_service",
           "eslint",
-          "jsonls",
           "pyright",
-          "yamlls",
         },
         automatic_installation = true,
       })
@@ -39,12 +35,8 @@ return {
       lspconfig.cssls.setup({})
       lspconfig.tailwindcss.setup({})
       lspconfig.bashls.setup({})
-      lspconfig.dockerls.setup({})
-      lspconfig.docker_compose_language_service.setup({})
       lspconfig.eslint.setup({})
-      lspconfig.jsonls.setup({})
       lspconfig.pyright.setup({})
-      lspconfig.yamlls.setup({})
 
       local nmap = function(keys, func, desc)
         if desc then
