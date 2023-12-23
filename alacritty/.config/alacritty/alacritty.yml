@@ -1,0 +1,116 @@
+font:
+  size: 15
+  offset:
+    y: 5
+    x: 0
+  glyph_offset:
+    y: 0
+    x: 0
+  normal:
+    family: "SFMono Nerd Font"
+    style: Light
+  bold:
+    family: "SFMono Nerd Font"
+    style: Medium
+  italic:
+    family: "SFMono Nerd Font"
+    style: Light italic
+
+window:
+  dynamic_padding: false
+  padding:
+    x: 5
+    y: 5
+  opacity: 0.90
+  decorations: buttonless
+  # dimensions:
+  #   columns: 150
+  #   lines: 30
+
+env:
+  TERM: xterm-256color
+
+scrolling:
+  history: 2000
+  auto_scroll: true
+
+#######################################
+##      START OF COLOR SCHEMES       ##
+#######################################
+schemes:
+  ### Gruvbox dark ###
+  gruvbox-dark: &gruvbox-dark
+    # Default colors
+    primary:
+      # hard contrast: background = '0x1d2021'
+      background: '#1b1b1b'
+      # soft contrast: background = '0x32302f'
+      foreground: '#ebdbb2'
+    # Normal colors
+    normal:
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
+    # Bright colors
+    bright:
+      black:   '#928374'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
+
+  ### moonfly ###
+  moonfly: &moonfly
+     # Default colors
+    primary:
+      background: '#080808'
+      foreground: '#b2b2b2'
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#080808'
+      cursor: '#b2b2b2'
+    # Normal colors
+    normal:
+      black:   '#323437'
+      red:     '#ff5454'
+      green:   '#8cc85f'
+      yellow:  '#e3c78a'
+      blue:    '#80a0ff'
+      magenta: '#d183e8'
+      cyan:    '#79dac8'
+      white:   '#c6c6c6'
+    # Bright colors
+    bright:
+      black:   '#949494'
+      red:     '#ff5189'
+      green:   '#36c692'
+      yellow:  '#bfbf97'
+      blue:    '#74b2ff'
+      magenta: '#ae81ff'
+      cyan:    '#85dc85'
+      white:   '#e4e4e4'
+
+colors: *moonfly
+
+
+######################################################################
+## SET THEME: Choose ONE color scheme from those in the above list. ##
+## ###################################################################
+# Available themes are:
+# *gruvbox-dark
+
+# colors: *gruvbox-dark
+colors: *moonfly
+
+#######################################
+##       END OF COLOR SCHEMES        ##
+#######################################
+
