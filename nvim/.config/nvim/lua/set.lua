@@ -1,13 +1,6 @@
--- Netrw settings---
 vim.g.netrw_banner = 0
--- Keep the current directory and the browsing directory synced.
--- This helps you avoid the move files error.
-vim.g.netrw_keepdir = 0
-vim.g.netrw_liststyle = 0
---------------------
-
-vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.number = true
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -17,6 +10,11 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+vim.opt.cursorline = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
