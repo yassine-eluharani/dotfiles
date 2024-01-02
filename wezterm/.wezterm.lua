@@ -27,7 +27,7 @@ config.window_background_image_hsb = {
 	saturation = 1.0,
 }
 config.send_composed_key_when_left_alt_is_pressed = true
-config.send_composed_key_when_right_alt_is_pressed = false
+config.send_composed_key_when_right_alt_is_pressed = true
 
 -- No tab bar
 config.enable_tab_bar = false
