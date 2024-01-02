@@ -17,15 +17,14 @@ config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 3000
 config.default_workspace = "home"
-config.window_background_image = "/Users/yassine/Pictures/Wallpaper/879383.jpg"
-config.window_background_image_hsb = {
-	-- Darken the background image by reducing it to 1/3rd
-	brightness = 0.08,
-	-- You can adjust the hue by scaling its value.
-	-- a multiplier of 1.0 leaves the value unchanged.
-	hue = 1.0,
-	saturation = 1.0,
-}
+config.color_scheme = "Bitmute"
+-- config.window_background_opacity = 0.95
+-- config.window_background_image = "/Users/yassine/Pictures/Wallpaper/879383.jpg"
+-- config.window_background_image_hsb = {
+-- 	brightness = 0.08,
+-- 	hue = 1.0,
+-- 	saturation = 1.0,
+-- }
 config.send_composed_key_when_left_alt_is_pressed = true
 config.send_composed_key_when_right_alt_is_pressed = true
 
