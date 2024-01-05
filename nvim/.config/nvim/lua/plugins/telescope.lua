@@ -46,6 +46,20 @@ return {
 				require("telescope.builtin").diagnostics,
 				{ desc = "[S]earch [D]iagnostics" }
 			)
+
+			vim.keymap.set("n", "<leader>w", function()
+				local word = vim.fn.expand("<cword>")
+				require("telescope.builtin").grep_string({ search = word })
+			end, {
+				desc = "Grep [W]ord",
+			})
+
+			vim.keymap.set("n", "<leader>W", function()
+				local word = vim.fn.expand("<cWORD>")
+				require("telescope.builtin").grep_string({ search = word })
+			end, {
+				desc = "Grep [W]ord",
+			})
 			require("telescope").load_extension("ui-select")
 		end,
 	},
