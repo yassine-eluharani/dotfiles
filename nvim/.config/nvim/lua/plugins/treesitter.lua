@@ -9,22 +9,23 @@ return {
 			local config = require("nvim-treesitter.configs")
 			config.setup({
 				ensure_installed = {
+					"vimdoc",
 					"python",
 					"javascript",
 					"typescript",
 					"lua",
-					"vim",
 					"json",
 					"tsx",
 					"yaml",
 					"html",
 					"css",
-					"graphql",
 					"bash",
 					"dockerfile",
 					"gitignore",
 				},
-				highlight = { enable = true },
+				highlight = {
+					enable = true,
+				},
 				indent = { enable = true },
 
 				autotag = { enable = true },
