@@ -6,3 +6,8 @@ on mac:
 brew install stow
 ```
 
+run to stow 
+```
+stow -v -R */
+```
+
