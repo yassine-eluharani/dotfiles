@@ -112,6 +112,7 @@ source "$HOME/.openai_key.zsh"
 # Example aliases
 alias cls="clear"
 alias v="nvim"
+alias cd="z"
 alias lla="exa -l -a"
 alias ll="exa -l"
 alias lsa="exa -a"
@@ -133,3 +134,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 
+eval "$(atuin init zsh)"
+eval "$(atuin init zsh)"

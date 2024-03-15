@@ -28,7 +28,7 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader><leader>", function()
-	vim.cmd("so")
+  vim.cmd("so")
 end)
 
 --Other remaps
@@ -46,3 +46,7 @@ vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
 vim.keymap.set("n", "<leader>gg", ":LazyGit<CR>")
 
 vim.keymap.set("n", "<leader>o", ":InspectTree<CR>")
+
+vim.keymap.set("n", "<leader>k", ":bp<CR>", { noremap = true, silent = true, desc = "Go to [P]revious buffer" })
+
+vim.keymap.set("n", "<leader>l", ":bn<CR>", { noremap = true, silent = true, desc = "Go to [N]ext buffer" })
