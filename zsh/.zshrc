@@ -118,6 +118,7 @@ alias ll="lsd -l"
 alias lsa="lsd -a"
 alias ls="lsd"
 alias t="tmux"
+alias ts="tmux-sessionizer"
 alias pip="pip3"
 alias python="python3"
 alias openPort="netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
@@ -128,9 +129,10 @@ alias openPort="netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
 # bun completions
 [ -s "/Users/yassine/.bun/_bun" ] && source "/Users/yassine/.bun/_bun"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# # bun
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 
