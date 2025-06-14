@@ -13,7 +13,7 @@ return {
     require("fidget").setup({})
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "tsserver",
+        "ts_ls",
         "jsonls",
         "html",
         "cssls",
