@@ -129,6 +129,12 @@ alias openPort="netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
 # bun completions
 [ -s "/Users/yassine/.bun/_bun" ] && source "/Users/yassine/.bun/_bun"
 
+# pyenv sync with shell
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
 # # bun
 # export BUN_INSTALL="$HOME/.bun"
 # export PATH="$BUN_INSTALL/bin:$PATH"
